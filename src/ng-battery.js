@@ -65,5 +65,4 @@
 			_updateCallback = fn;
 	  };
 	});
-
 }());

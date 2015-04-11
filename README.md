@@ -9,13 +9,14 @@ As of November 2014 the Battery Status API is supported by Firefox and Chrome: h
 ```javascript
 var app = angular.module('myModule', ['ngBattery']);
 app.directive('myCoolBatteryDirective', function(battery){
-       return {
-       link: function($scope) {
-            battery.onUpdate(function() {
-                $scope.$evalAsync(function(status) {
-                    $scope.batteryStatus = status;
-                });
-            });
-       }
-    });
+  return {
+    link: function($scope) {
+      battery.onUpdate(function() {
+        $scope.$evalAsync(function(status) {
+          $scope.batteryStatus = status;
+        });
+      });
+    }
+  };
+});
 ```

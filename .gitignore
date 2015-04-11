@@ -1,2 +1,6 @@
 .DS_Store
 ._*
+bower_components/
+node_modules/
+npm-debug.log
+*.sublime-*

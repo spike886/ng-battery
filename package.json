@@ -1,0 +1,32 @@
+{
+  "name": "ng-battery",
+  "version": "0.0.1",
+  "description": "A simple AngularJS component for the Battery Web API",
+  "main": "dist/ng-battery.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andrei-cacio/ng-battery.git"
+  },
+  "keywords": [
+    "battery"
+  ],
+  "author": "Andrei Cacio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andrei-cacio/ng-battery/issues"
+  },
+  "homepage": "https://github.com/andrei-cacio/ng-battery",
+  "devDependencies": {
+    "bower": "^1.4.1",
+    "gulp": "^3.8.11",
+    "gulp-concat": "^2.5.2",
+    "gulp-header": "^1.2.2",
+    "gulp-jshint": "^1.10.0",
+    "gulp-uglify": "^1.2.0",
+    "jshint-stylish": "^1.0.1",
+    "wiredep": "^2.2.2"
+  }
+}

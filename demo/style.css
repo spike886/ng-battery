@@ -1,0 +1,102 @@
+* {
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      font-family: 'Helvetica Neue', Helvetica, sans-serif;
+      color: #eee;
+      font-size: 18px;
+      height: 100%;
+      width: 100%;
+    }
+
+    body {
+      background: #111;
+    }
+
+    a {
+      text-decoration: none;
+      color: #eee;
+    }
+
+    #header {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 99;
+    }
+
+    #header span {
+      color: #777;
+      font-size: 16px;
+    }
+
+    #not-supported {
+      background-color: #e53d3d;
+      display: none;
+      padding: 3px 7px;
+      color: black;
+      font-weight: bold;
+      font-size: 14px;
+      border-radius: 0 0 6px 6px;
+    }
+
+    #stage {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      opacity: 0.8;
+      text-align: center;
+    }
+
+    #battery {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      margin: -50px -161px;
+      width: 300px;
+      padding: 5px;
+      border: 6px solid white;
+      border-radius: 7px;
+    }
+
+    #battery-level {
+      color: #111;
+      font-size: 60px;
+      width: 0;
+      height: 100px;
+      background-color: white;
+      border-radius: 1px;
+      -moz-transition: all 300ms ease-out;
+      -webkit-transition: all 300ms ease-out;
+      transition: all 300ms ease-out;
+    }
+
+    #battery-level.low {
+      background-color: #e53d3d;
+    }
+
+    #battery-level.charging,
+    #battery-level.plugged {
+      width: 100% !important;
+      background: url(public/charging.png) no-repeat center white;
+      -moz-transition: none;
+      -webkit-transition: none;
+      transition: none;
+    }
+
+    #battery-level.plugged {
+      background-image: url(public/plugged.png);
+    }
+
+    #battery-knob {
+      position: absolute;
+      left: 310px;
+      top: 50%;
+      margin-top: -22px;
+      height: 30px;
+      width: 10px;
+      border: 6px solid white;
+      border-radius: 7px;
+    }

@@ -1,4 +1,4 @@
-# ngBatter
+# ngBattery
 
 A tiny AngularJS service over the tiny JavaScript wrapper for the [HTML5 Battery Status API](http://www.w3.org/TR/battery-status/).
 

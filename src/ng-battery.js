@@ -27,7 +27,7 @@
 		  .then(function(status) {
 				_status = status;
 				_statusCallback(_status);
-				registerEventHandler(_status);
+				registerEventHandler(_battery);
 		  }, function() {
 				_status = 'not supported';
 		  });

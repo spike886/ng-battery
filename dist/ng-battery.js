@@ -23,7 +23,7 @@
 
 	  function registerEventHandler(battery) {
 			for(var evt in _events.split(' ')) {
-			  battery.addEventListener(evt, eventHandler);
+			  battery.addEventListener(_events.split(' ')[evt], eventHandler);
 			}
 	  }
 
@@ -69,11 +69,5 @@
 	  this.onUpdate = function(fn) {
 			_updateCallback = fn;
 	  };
-
-	  window.battery = this;
 	});
-
-	ngBattery.run(['battery', function() {
-
-	}]);
 }());

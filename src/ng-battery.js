@@ -12,7 +12,7 @@
 		_updateCallback = function() {};
 
 	function eventHandler(status) {
-		_status = status;
+		_status = status.target;
 		_updateCallback(_status);
 	  }
 
